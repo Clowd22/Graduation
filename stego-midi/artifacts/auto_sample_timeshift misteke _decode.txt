@@ -1,6 +1,0 @@
---- STDOUT ---
-解析するMIDIファイル名を入力してください（拡張子 .mid は不要）: ファイルが見つかりません: mid\auto_sample_timeshift misteke .mid
-
-
---- STDERR ---
-
