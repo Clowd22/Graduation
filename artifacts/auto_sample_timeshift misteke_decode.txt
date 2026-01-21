@@ -1,0 +1,74 @@
+--- STDOUT ---
+解析するMIDIファイル名を入力してください（拡張子 .mid は不要）: [Step 1] decoded note=G3 dur=480 vel=80 -> bits=000000
+[Step 2] decoded note=G3 dur=480 vel=80 -> bits=000000
+[Step 3] decoded note=G3 dur=480 vel=80 -> bits=000000
+[Step 4] decoded note=G3 dur=480 vel=80 -> bits=000000
+[Step 5] decoded note=G3 dur=960 vel=82 -> bits=001010
+[Step 6] decoded note=G3 dur=960 vel=81 -> bits=000110
+[Step 7] decoded note=B3 dur=240 vel=80 -> bits=101001
+[Step 8] decoded note=C4 dur=240 vel=82 -> bits=101001
+[Step 9] decoded note=C4 dur=960 vel=80 -> bits=011010
+[Step 10] decoded note=E4 dur=960 vel=81 -> bits=110110
+[Step 11] decoded note=B4 dur=240 vel=80 -> bits=111101
+[Step 12] decoded note=B4 dur=960 vel=82 -> bits=101010
+[Step 13] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 14] decoded note=G4 dur=960 vel=82 -> bits=010110
+[Step 15] decoded note=A4 dur=240 vel=82 -> bits=101101
+[Step 16] decoded note=B4 dur=720 vel=82 -> bits=101111
+[Step 17] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 18] decoded note=A4 dur=960 vel=80 -> bits=011010
+[Step 19] decoded note=B4 dur=240 vel=81 -> bits=101001
+[Step 20] decoded note=B4 dur=721 vel=82 -> bits=101011
+[Step 21] decoded note=A4 dur=720 vel=82 -> bits=011011
+[Step 22] decoded note=C5 dur=960 vel=81 -> bits=110110
+[Step 23] decoded note=B4 dur=240 vel=84 -> bits=101001
+[Step 24] decoded note=B4 dur=240 vel=82 -> bits=101001
+[Step 25] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 26] decoded note=C5 dur=960 vel=81 -> bits=110110
+[Step 27] decoded note=C5 dur=240 vel=84 -> bits=111101
+[Step 28] decoded note=B4 dur=960 vel=84 -> bits=101010
+[Step 29] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 30] decoded note=G4 dur=960 vel=82 -> bits=010110
+[Step 31] decoded note=A4 dur=240 vel=82 -> bits=101101
+[Step 32] decoded note=B4 dur=720 vel=82 -> bits=101111
+[Step 33] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 34] decoded note=B4 dur=960 vel=80 -> bits=100110
+[Step 35] decoded note=B4 dur=240 vel=81 -> bits=100101
+[Step 36] decoded note=B4 dur=720 vel=82 -> bits=101011
+[Step 37] decoded note=A4 dur=720 vel=82 -> bits=011011
+[Step 38] decoded note=C5 dur=960 vel=81 -> bits=110110
+[Step 39] decoded note=B4 dur=240 vel=84 -> bits=101001
+[Step 40] decoded note=B4 dur=241 vel=82 -> bits=101001
+[Step 41] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 42] decoded note=C5 dur=960 vel=81 -> bits=110110
+[Step 43] decoded note=C5 dur=240 vel=84 -> bits=111101
+[Step 44] decoded note=B4 dur=960 vel=84 -> bits=101010
+[Step 45] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 46] decoded note=G4 dur=960 vel=82 -> bits=010110
+[Step 47] decoded note=A4 dur=240 vel=82 -> bits=101101
+[Step 48] decoded note=B4 dur=720 vel=82 -> bits=101111
+[Step 49] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 50] decoded note=B4 dur=960 vel=80 -> bits=100110
+[Step 51] decoded note=B4 dur=240 vel=81 -> bits=100101
+[Step 52] decoded note=B4 dur=720 vel=82 -> bits=101011
+[Step 53] decoded note=A4 dur=720 vel=82 -> bits=011011
+[Step 54] decoded note=C5 dur=960 vel=81 -> bits=110110
+[Step 55] decoded note=B4 dur=240 vel=84 -> bits=101001
+[Step 56] decoded note=B4 dur=240 vel=82 -> bits=101001
+[Step 57] decoded note=A4 dur=960 vel=82 -> bits=011010
+[Step 58] decoded note=C5 dur=960 vel=81 -> bits=110110
+[Step 59] decoded note=C5 dur=480 vel=84 -> bits=111100
+[DECODE INFO] bit_string_len=354 rem=2 (last32='10101001101001011010110110111100')
+[INFO] 末尾の不完全なビットを2個検出、6個の'0'でパディングして復号します
+[DECODE INFO] reconstructed_bytes_len=45 first4=00000028 last4=696b6f00
+[DECODE INFO] expected_payload_len=40 available=41
+
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "C:\Users\shu\Documents\授業データまとめ\特別研究\stego-midi\decode_adaptive_timeshift_decode.py", line 299, in <module>
+    main()
+  File "C:\Users\shu\Documents\授業データまとめ\特別研究\stego-midi\decode_adaptive_timeshift_decode.py", line 296, in main
+    print(f"復号テキスト: {decoded_text}")
+UnicodeEncodeError: 'cp932' codec can't encode character '\ufffd' in position 17: illegal multibyte sequence
+
